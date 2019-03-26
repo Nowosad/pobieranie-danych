@@ -31,7 +31,7 @@ df2
 # wykres
 ggplot(df2, aes(as.numeric(date), value, color = country)) +
   geom_line() +
-  labs(x = "Rok", y = "Liczba ludności", title = "Tyuł", subtitle = "Dane pobrane z banku światowego..." ) +
+  labs(x = "Rok", y = "Liczba ludności", title = "Tytuł", subtitle = "Dane pobrane z banku światowego..." ) +
   facet_wrap(~country, scales = "free_y")
 
 # kilka krajów
@@ -43,4 +43,4 @@ df3 = wb(country = "countries_only",
 # wykres
 ggplot(df3, aes(as.numeric(date), value, color = country)) +
   geom_line() +
-  labs(x = "Rok", y = "Liczba ludności", title = "Tyuł", subtitle = "Dane pobrane z banku światowego..." )
+  labs(x = "Rok", y = "Liczba ludności", title = "Tytuł", subtitle = "Dane pobrane z banku światowego..." )
